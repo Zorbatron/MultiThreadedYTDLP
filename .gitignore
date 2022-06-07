@@ -3,3 +3,5 @@ build/
 dist/
 main.spec
 MultiThreadedYTDLP.spec
+MultiThreadedYTDLP-Linux.spec
+MultiThreadedYTDLP-Windows.spec
