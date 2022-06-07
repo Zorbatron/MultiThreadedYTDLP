@@ -1,1 +1,4 @@
 DownloadedVideos/
+build/
+dist/
+main.spec
