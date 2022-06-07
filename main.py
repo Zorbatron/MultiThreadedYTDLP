@@ -21,7 +21,7 @@ if __name__ == '__main__':
             'outtmpl': './DownloadedVideos/%(title)s.%(ext)s'
         }])
         processes.append(r)
-    
+
     for r in processes:
         r.wait()
 
