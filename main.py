@@ -5,7 +5,7 @@ def download_video(link, args):
     with yt_dlp.YoutubeDL(args) as ydl:
         ydl.download(link)
 
-if __name__ == '__main__':
+def main():
     url = input("Input playlist URL\n")
     workerAmount = int(input("Input amount of videos to download in parrallel\n"))
 
@@ -29,3 +29,6 @@ if __name__ == '__main__':
     pool.join()
 
     print("Done!")
+
+if __name__ == '__main__':
+    main()
