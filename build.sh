@@ -1,0 +1,1 @@
+pyinstaller -DF --hidden-import=yt_dlp.compat._legacy -n MultiThreadedYTDLP main.py 
