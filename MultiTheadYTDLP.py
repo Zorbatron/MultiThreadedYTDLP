@@ -17,7 +17,8 @@ if __name__ == '__main__':
     pool = mp.Pool(workerAmount)
     for block in data['entries']:
         r = pool.apply_async(download_video, args=[block['url'], {
-            #'format': 'best[ext=mp4]'
+            #options go here
+            'outtmpl': './DownloadedVideos/%(title)s.%(ext)s'
         }])
         processes.append(r)
     
