@@ -9,12 +9,12 @@ def download_video(link, args):
 
 def main():
     try:
-        if ostype() == 'Linux':
-            os.system("./build.sh")
-            os.remove("build.bat")
-        else:
+        if ostype() == 'Windows':
             os.system("build.bat")
             os.remove("build.sh")
+        else:
+            os.system("./build.sh")
+            os.remove("build.bat")
     except FileNotFoundError:
         pass
     url = input("Input playlist URL\n")
