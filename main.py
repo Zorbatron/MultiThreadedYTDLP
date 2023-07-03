@@ -18,7 +18,8 @@ def main():
     for block in data['entries']:
         r = pool.apply_async(download_video, args=[block['url'], {
             #options go here
-            'outtmpl': './DownloadedVideos/%(title)s.%(ext)s'
+            'outtmpl': f'./DownloadedVideos/{data["title"]}/%(title)s.%(ext)s',
+            'format': 'bestvideo+bestaudio'
         }])
         processes.append(r)
 
