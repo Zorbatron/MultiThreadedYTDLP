@@ -7,7 +7,7 @@ def download_video(link, args):
 
 def main():
     url = input("Input playlist URL\n")
-    workerAmount = int(input("Input amount of videos to download in parrallel\n"))
+    workerAmount = int(input("Input amount of videos to download in parallel\n"))
 
     ytdl = yt_dlp.YoutubeDL( {'extract_flat': True, 'quiet': True} )
     data = ytdl.extract_info(url, download=False)
